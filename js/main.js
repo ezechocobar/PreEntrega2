@@ -1,11 +1,15 @@
-let usuarioEnLocalStorage = localStorage.getItem("usuario");
- console.log(usuarioEnLocalStorage);
+const user = JSON.parse(localStorage.getItem('login_success')) || false
+if(!user){
+    window.location.href = 'login.html'
+}
 
- let usuarioIngresado = prompt("Ingrese su nombre");
- localStorage.setItem("usuario-ingresado", usuarioIngresado);
+const logout = document.querySelector('#logout')
 
- let usuarioIngresadoEnLocalStorage = localStorage.getItem("usuario-ingresado");
- console.log(usuarioIngresadoEnLocalStorage);
+logout.addEventListener('click', ()=>{
+    alert('Hasta pronto!')
+    localStorage.removeItem('login_success')
+    window.location.href = 'login.html'
+})
 
 window.addEventListener("DOMContentLoaded", (event) => {
     const productos = [
