@@ -1,3 +1,12 @@
+let usuarioEnLocalStorage = localStorage.getItem("usuario");
+ console.log(usuarioEnLocalStorage);
+
+ let usuarioIngresado = prompt("Ingrese su nombre");
+ localStorage.setItem("usuario-ingresado", usuarioIngresado);
+
+ let usuarioIngresadoEnLocalStorage = localStorage.getItem("usuario-ingresado");
+ console.log(usuarioIngresadoEnLocalStorage);
+
 window.addEventListener("DOMContentLoaded", (event) => {
     const productos = [
         {nombre: "Coca Cola", precio: 1500},
