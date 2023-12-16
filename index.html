@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de bebidas gaseosas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Tucson - Bartender</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section id="contenedor-main">
-        <h1>Tienda de bebidas</h1>
-        <h2>Bienvenido!</h2>
-        <p>Éstas son las gaseosas que mantenemos vigentes</p>
-        <div>
-            <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
-    
-            <ul id="listaArticulos">
-                <li class="articulo">Coca Cola</li>
-                <li class="articulo">Pepsi</li>
-                <li class="articulo">Torasso</li>
-                <li class="articulo">Secco</li>
-                <li class="articulo">Sprite</li>
-                <li class="articulo">Fanta</li>
-                <li class="articulo">Ibera</li>
-                <li class="articulo">Crush</li>
-            </ul>
-    
+    <!-- navbar -->
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 class="navbar-logo">Tucson🍹</h1>
+            <h2 class="carrito" id="verCarrito">🛒</h2>
+        </nav>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner-container">
+            <h1>Tucson - Bartender</h1>
+            <p>Los mejores tragos de Tucumán</p>
         </div>
-        <button id="logout">Logout</button>
-    
-    
-    
-    </section>
-    <script src="js/main.js" defer="yes"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </div>
+    <a href="login.html">Logout</a>
+
+    <!-- contenido bartender -->
+    <div id="tragosContenido" class="tragos-contenido"></div>
+
+    <!-- contenido del modal -->
+    <div id="modal-container" class="modal-container"></div>
+    <!-- javascript -->
+    <script src="./js/productos.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/carrito.js" defer></script>
 </body>
 </html>
