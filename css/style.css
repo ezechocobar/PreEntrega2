@@ -4,6 +4,20 @@ body {
     url(/bartender.png)
 }
 
+.color-login{
+    background-color: #0a0831bb;
+}
+
+.salir-login{
+    font-style: none;
+    justify-content: center;
+    color: #0a0831bb;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 section{
     display:flex;
     flex-wrap: wrap;
@@ -205,6 +219,10 @@ input{
 
 /* contenido del modal */
 
+.carrito{
+    cursor: pointer;
+}
+
 .modal-container{
     width: 80%;
     margin: 0 10%;
@@ -264,7 +282,7 @@ input{
 }
 
 /* boton borrar */
-.delete-carrito{
+.delete-product{
     cursor: pointer;
 }
 
